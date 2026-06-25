@@ -1,10 +1,8 @@
-# CS596 Research Topics — Assignment 1: Machine Learning Basics (CIFAR-10)
-
-Coursework for **CS596 – Research Topics in Computer Science**, Bishop's University.
+# Machine Learning Basics with PyTorch on CIFAR-10
 
 Four classic classifiers implemented in **PyTorch** (GPU-accelerated) and validated on the CIFAR-10
-image dataset with train/validation/test splits and hyperparameter tuning. The solution is in
-[`A1_ML_Basics_CIFAR10.ipynb`](A1_ML_Basics_CIFAR10.ipynb).
+image dataset with train/validation/test splits and hyperparameter tuning. The implementation is in
+[`ml_basics_cifar10.ipynb`](ml_basics_cifar10.ipynb).
 
 ## Classifiers and results
 
@@ -19,18 +17,18 @@ Run on an NVIDIA RTX 3080. CIFAR-10 is downloaded automatically by `torchvision`
 
 These are the expected baselines for classic classifiers on raw pixels: a single linear boundary or
 a nearest-neighbour vote in pixel space cannot capture the visual structure that convolutional
-networks (Assignment 2) exploit.
+networks exploit.
 
 ## Running it
 
 ```bash
 pip install torch torchvision numpy pandas matplotlib   # CUDA build of torch for GPU
-jupyter notebook A1_ML_Basics_CIFAR10.ipynb
+jupyter notebook ml_basics_cifar10.ipynb
 ```
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `A1_ML_Basics_CIFAR10.ipynb` | Full solution (k-NN, SVM, linear & logistic regression) |
-| `Assignment 1 Machine Learning Basics-converti.pdf` | Assignment description |
+| `ml_basics_cifar10.ipynb` | Full implementation and analysis (k-NN, SVM, linear and logistic regression) |
+| `PROJECT_BRIEF.pdf` | Project brief (goals, objectives, outcomes) |
